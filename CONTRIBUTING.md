@@ -2,7 +2,7 @@
 PLEASE NOTE: This document has not been updated in a while and is out of date, but contents are retained as some may still be useful.
 
 TL;DR? The `winston` project recently shipped `3.0.0` out of RC and is actively
-working towards the next feature release as it continues to triage issues. 
+working towards the next feature release as it continues to triage issues.
 
 - [Be kind & actively empathetic to one another](CODE_OF_CONDUCT.md)
 - [What makes up `winston`?](#what-makes-up-winston)
@@ -10,16 +10,16 @@ working towards the next feature release as it continues to triage issues.
 - [Could this be implemented as a format?](#could-this-be-implemented-as-a-format)
 - [Roadmap](#roadmap)
 
-Looking for somewhere to help? Checkout the [Roadmap](#roadmap) & help triage open issues! Find an issue that looks like a duplicate? It probably is! Comment on it so we know it's maybe a duplicate 🙏.
+Looking for somewhere to help? Checkout the [Roadmap](#roadmap) & help triage open issues! Find an issue that looks like a duplicate? It probably is! Comment on it so we know it's maybe a duplicate 🙏. Contribution?
 
 ## What makes up `winston`?
 
 As of `winston@3` the project has been broken out into a few modules:
 
 - [winston-transport]: `Transport` stream implementation & legacy `Transport` wrapper.
-- [logform]: All formats exports through `winston.format` 
+- [logform]: All formats exports through `winston.format`
 - `LEVEL` and `MESSAGE` symbols exposed through [triple-beam].
-- [Shared test suite][abstract-winston-transport] for community transports 
+- [Shared test suite][abstract-winston-transport] for community transports
 
 Let's dig in deeper. The example below has been annotated to demonstrate the different packages that compose the example itself:
 
@@ -78,14 +78,14 @@ Below is the list of items that make up the roadmap through `3.4.0`. We are acti
 
 - [ ] Unstarted work.
 - [x] Finished work.
-- [-] Partially finished or in-progress work. 
+- [-] Partially finished or in-progress work.
 
 ## Version `3.3.0`
 
 ### High priority issues (non-blocking)
 - [ ] Move `File` transport into `winston-file`.
 - [Browser support](https://github.com/winstonjs/winston/issues/287)
-  - [ ] Unit tests for `webpack` & `rollup` 
+  - [ ] Unit tests for `webpack` & `rollup`
   - [ ] Replicate browser-only transpilation for `winston`, `winston-transport`, `triple-beam`.
 - [-] Full JSDoc coverage
 - Benchmarking for `File` and `Stream` transports:
@@ -97,7 +97,7 @@ Below is the list of items that make up the roadmap through `3.4.0`. We are acti
 
 ### Increased code & scenario coverage
 - [-] Replace all `vows`-based tests.
-  - [-] `test/transports/*-test.js` 
+  - [-] `test/transports/*-test.js`
 - [ ] Code coverage tests above 80% for `winston` _(currently `~70%`)_.
   - [-] Core scenarios covered in `abstract-winston-transport`.
   - [-] Full integration tests for all `logform` transports
